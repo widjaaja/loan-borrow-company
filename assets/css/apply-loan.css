@@ -28,6 +28,100 @@
     color: rgb(186, 227, 248);
 }
 
+.app-body > .section-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #FFF;
+    padding: 70px 20px;
+}
+
+.app-body > .section-form > .content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    max-width: 80%;
+    width: 80%;
+    margin: auto;
+}
+
+.app-body > .section-form > .content > .head {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding: 24px;
+    border-top: 2px solid rgb(6, 10, 45);
+    border-bottom: 2px solid rgb(6, 10, 45);
+    margin: 16px;
+}
+
+.app-body > .section-form > .content > .head > h4 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.app-body > .section-form > .content > .body {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.app-body > .section-form > .content > .body > span {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.app-body > .section-form > .content > .body > .row {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    flex-direction: row;
+    padding: 8px 24px;
+}
+
+.app-body > .section-form > .content > .body > .row > .field-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 8px;
+}
+
+.app-body > .section-form > .content > .body > .row > .field-form > label {
+    display: flex;
+    flex: 1;
+    margin-bottom: 4px;
+}
+
+.app-body > .section-form > .content > .body > .row > .field-form > label b {
+    color: red;
+}
+
+.app-body > .section-form > .content > .body > .row > .field-form > input {
+    flex: 1;
+    min-height: 40px;
+    border: 1px solid rgb(204, 214, 219);
+    border-radius: 6px;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.app-body > .section-form > .content > .body > .row > .field-form > input:focus {
+    border: 1px solid rgb(204, 214, 219);
+    outline-color: rgb(186, 227, 248);
+}
+
+.app-body > .section-form > .submit-content {
+    margin-top: 24px;
+}
+
+.app-body > .section-form > .submit-content > button {
+    padding: 12px 24px;
+}
+
+
 @media screen and (min-width: 700px) {
     .app-body > .section-header > .content > h1 {
         font-size: 57px;

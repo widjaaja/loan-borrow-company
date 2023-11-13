@@ -155,6 +155,10 @@ body {
     align-self: center;
 }
 
+.app-header > .content > .left > img {
+    cursor: pointer;
+}
+
 .app-header > .content > .center {
     align-self: center;
 }

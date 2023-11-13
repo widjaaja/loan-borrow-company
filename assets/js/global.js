@@ -1,6 +1,13 @@
+
 window.onload = function(){
+    // List Menu
+    var logo = document.querySelector(".logo");
+    logo.addEventListener("click", (() => redirect('/')), false);
+    var applyOnline = document.querySelector(".apply-online");
+    applyOnline.addEventListener("click", (() => redirect('/pages/apply-loan.html')), false);
+
     // Menu Service Dropdown
-    var menuService = document.getElementById("menu-service");
+    var menuService = document.querySelector(".menu-service");
     var appHeader = document.querySelector(".app-header");
     menuService.addEventListener("mouseenter", openMenuService, false);
     appHeader.addEventListener("mouseleave", closeMenuService, false);
@@ -10,6 +17,10 @@ window.onload = function(){
     var closeNavbar = document.querySelector(".close-navbar");
     openNavbar.addEventListener("click", openMenuMobile, false);
     closeNavbar.addEventListener("click", closeMenuMobile, false);
+}
+
+function redirect(url){ 
+    window.location.href = url;
 }
 
 function openMenuService(){  
@@ -63,3 +74,6 @@ function closeMenuService(){
      animation.play()
     }
  }
+
+
+
