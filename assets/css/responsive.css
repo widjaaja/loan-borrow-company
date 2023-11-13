@@ -19,8 +19,15 @@
     .app-header {
         display: flex;
         flex: 1;
+    }
+
+    .app-header > .content {
+        display: flex;
+        flex: 1;
         padding: 20px;
     }
+
+    
     .app-body > .section-header > .content {
         height: calc((100vh - 80px) - 80px);
     }
@@ -136,11 +143,6 @@
         overflow: hidden scroll;
         padding: 0 28px;
         opacity: 0;
-    }
-
-    .app-header .content-mobile.active {
-        opacity: 1;
-        display: flex;
     }
 
     .app-header .content-mobile .header {
@@ -385,7 +387,6 @@
     .app-header {
         display: flex;
         flex: 1;
-        padding: 20px;
     }
     .app-body > .section-header > .content {
         height: calc((100vh - 80px) - 80px);
