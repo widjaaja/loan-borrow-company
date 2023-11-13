@@ -1,9 +1,9 @@
 jQuery(document).ready(function(){
-    jQuery("#navigationBar .open-navbar").click(function(){
-        jQuery("#navigationBar .content-mobile").toggleClass('active');
+    jQuery(".open-navbar").click(function(){
+        jQuery(".content-mobile").toggleClass('active');
     });
 
-    jQuery("#navigationBar .close-navbar").click(function(){
-        jQuery("#navigationBar .content-mobile").toggleClass('active');
+    jQuery(".close-navbar").click(function(){
+        jQuery(".content-mobile").toggleClass('active');
     });
 })
