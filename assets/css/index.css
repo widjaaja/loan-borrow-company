@@ -107,6 +107,7 @@ body {
     flex: 1;
     position: relative;
     min-height: 500px;
+    max-height: 700px;
     border-top: 1px solid rgb(174, 174, 174);
 }
 
@@ -224,6 +225,7 @@ body {
     display: flex;
     flex-direction: row;
     flex: 1;
+    max-height: 700px;
 }
 
 .app-body > .section-header > .content > .left {
@@ -399,6 +401,7 @@ body {
     position: relative;
     padding:  0 40px 40px;
     min-height: 400px;
+    max-height: 700px;
 }
 
 .app-body > .section-service > .content > .list-service > .bg-service {
@@ -759,6 +762,138 @@ body {
 }
 
 
+@media screen and (min-width: 1200px) {
 
+    .app-body > .section-header > .content {
+        min-height: 600px;
+        min-height: calc((100vh - 80px) - 80px) !important;
+    }
+    .app-body > .section-header > .additional-content span {
+        font-size: 26px;
+    }
+    .app-footer > .content > .list-footer > .item > .top > img {
+        width: 180px !important;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .app-body > .section-header > .content {
+        height: calc((100vh - 80px) - 80px);
+    }
+    .app-body > .section-header > .additional-content span {
+        font-size: 26px;
+    }
+
+    .app-body > .section-feature > .content > .body > .bottom > .list > .item > h3 {
+        font-size: 24px !important;
+        font-weight: bold;
+    }
+
+    .app-body > .section-award  > .list > .item > p {
+        font-size: 1.25018vw !important;
+    }   
+}
+
+@media screen and (max-width: 699px) {
+    .app-body > .section-header > .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .app-body > .section-header > .content > .left {
+        padding: 28px;
+    }
+
+    .app-body > .section-header > .content > .left > .top > h1 {
+        font-size: 28px !important;
+        letter-spacing: -0.02em;
+        line-height: 1.06;
+        font-weight: bold;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .app-body > .section-header > .content > .left > .top > span {
+        margin-top: 15px;
+        font-size: 16px !important;
+        line-height: 1.15;
+        font-weight: normal;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .app-body > .section-header > .content > .left > .top > button {
+        font-size: 12px !important;
+        padding: 12px 20px !important;
+    }
+
+    .app-body > .section-header > .content > .right {
+        height: 100% !important;
+        position: relative;
+        overflow: hidden;
+        aspect-ratio: 1 / 1;
+    }
+
+    .app-body > .section-header > .additional-content {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .app-body > .section-header > .additional-content span {
+        text-align: center;
+        font-size: 18px !important;
+        text-decoration: underline;
+    }
+    .app-body > .section-service > .content > .header {
+        padding: 60px 0 !important;
+    }
+    
+    .app-body > .section-service > .content > .header > span {
+        font-size: 10px !important;
+    }
+    .app-body > .section-service > .content > .header > h2 {
+        font-size: 28px !important;
+    }
+    .app-body > .section-service > .content > .list-service {
+        display: flex;
+        flex-direction: column;
+        padding: 0 28px !important;
+    }
+
+    .app-body > .section-service > .content > .list-service > .item {
+        aspect-ratio: 1.43 / 1;
+        border-right: none;
+        border-bottom: 1px solid rgb(174, 174, 174);
+        padding: 13px 20px !important;
+        transition: all 0.3s ease 0s;
+        cursor: pointer; 
+    }
+
+    .app-body > .section-service > .content > .list-service > .item > h3 {
+        font-size: 22px !important;
+    }
+    .app-body > .section-service > .content > .list-service > .item > span {
+        font-size: 16px !important;
+    }
+
+    .app-body > .section-service > .content > .list-service > .item > img {
+        width: 70px !important;
+    }
+
+    .app-body > .section-service > .content > .list-service > .bg-service {
+        top: 145px;
+    }
+
+    .app-body > .section-feature > .content > .header {
+        padding: 60px 0 !important;
+    }
+    
+    .app-body > .section-feature > .content > .header > span {
+        font-size: 10px !important;
+    }
+    .app-body > .section-feature > .content > .header > h2 {
+        font-size: 28px !important;
+    }
+
+}
 
 

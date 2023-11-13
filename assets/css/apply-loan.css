@@ -1,0 +1,50 @@
+.app-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-body > .section-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(6, 10, 45);
+    padding: 70px 20px;
+}
+
+.app-body > .section-header > .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.app-body > .section-header > .content > h1 {
+    text-align: center;
+    color: rgb(186, 227, 248);
+}
+
+.app-body > .section-header > .content > span {
+    text-align: center;
+    color: rgb(186, 227, 248);
+}
+
+@media screen and (min-width: 700px) {
+    .app-body > .section-header > .content > h1 {
+        font-size: 57px;
+        margin-bottom: 20px;
+    }
+
+    .app-body > .section-header > .content > span {
+        font-size: 20px;
+    }
+    
+}
+@media screen and (min-width: 1440px){
+    .app-body > .section-header > .content > h1 {
+        font-size: 57px;
+    }
+
+    .app-body > .section-header > .content > span {
+        font-size: 20px;
+    }
+}
