@@ -218,6 +218,17 @@ body {
     color: #FFF;
 }
 
+.app-header > .nav-fixed {
+    position: fixed;
+    background: rgb(255, 251, 247);
+    width: -webkit-fill-available !important;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    display: none;
+    z-index: 200;
+}
+
 
 /* Footer Styling */
 

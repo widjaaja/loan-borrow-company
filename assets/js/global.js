@@ -1,5 +1,27 @@
 
 window.onload = function(){
+    // Body
+    var containerLayout = document.querySelector(".container-layout");
+    window.addEventListener('scroll', () => {    
+        console.log("top of element", window.scrollY);
+        if (window.scrollY > 200) {
+            let animation = gsap.to(".nav-fixed", {
+                paused: true,
+                opacity: 1,
+                display: "flex",
+            });
+            animation.play()
+        }
+        if (window.scrollY === 0) {
+            let animation = gsap.to(".nav-fixed", {
+                paused: true,
+                opacity: 0,
+                display: "none",
+            });
+            animation.play()
+        }
+    }, {passive: true});
+
     // List Menu
     var logo = document.querySelector(".logo");
     logo.addEventListener("click", (() => redirect('/')), false);
@@ -25,7 +47,6 @@ function redirect(url){
 
 function openMenuService(){  
    const subMenuService = document.querySelector(".sub-menu-service");
-   console.log(subMenuService);
    if (subMenuService) {
     let animation = gsap.to(subMenuService, {
         paused: true,
@@ -38,7 +59,6 @@ function openMenuService(){
 
 function closeMenuService(){ 
     const subMenuService = document.querySelector(".sub-menu-service");
-    console.log(subMenuService);
     if (subMenuService) {
      let animation = gsap.to(subMenuService, {
          paused: true,
@@ -51,7 +71,6 @@ function closeMenuService(){
 
  function openMenuMobile(){  
     const contentMenuMobile = document.querySelector(".content-mobile");
-    console.log(contentMenuMobile);
     if (contentMenuMobile) {
      let animation = gsap.to(contentMenuMobile, {
          paused: true,
@@ -64,7 +83,6 @@ function closeMenuService(){
 
  function closeMenuMobile(){  
     const contentMenuMobile = document.querySelector(".content-mobile");
-    console.log(contentMenuMobile);
     if (contentMenuMobile) {
      let animation = gsap.to(contentMenuMobile, {
          paused: true,
