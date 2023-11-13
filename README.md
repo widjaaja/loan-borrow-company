@@ -2,11 +2,11 @@
 
 List Pages
 
-[x] Home Page <br />
-[ ] Service/Residential Page <br />
-[ ] Service/Commercial Page <br />
-[ ] Service/Reverse Page <br />
-[ ] Service/Real Estate Page <br />
+[x] Home Page 
+[ ] Service/Residential Page
+[ ] Service/Commercial Page
+[ ] Service/Reverse Page
+[ ] Service/Real Estate Page
 
-[ ] Form Application Page <br />
-[ ] Form Application Page <br />
+[ ] Form Application Page
+[ ] Form Application Page
