@@ -110,6 +110,7 @@ body {
     display: flex;
     flex: 1;
     position: relative;
+    min-height: 320px;
     max-height: 400px;
     border-top: 1px solid rgb(174, 174, 174);
 }
@@ -126,8 +127,25 @@ body {
     z-index: 10;
 }
 
-.app-header > .content > .sub-menu-service > .list-service > .item:hover {
-    background: rgb(241, 250, 255);
+.app-header > .content > .sub-menu-service > .list-service > .residential:hover {
+    background: #FFE533;
+}
+.app-header > .content > .sub-menu-service > .list-service > .commercial:hover {
+    background: #00b5ef;
+}
+.app-header > .content > .sub-menu-service > .list-service > .reverse:hover {
+    background: #953192;
+}
+.app-header > .content > .sub-menu-service > .list-service > .real-estate:hover {
+    background: #4a494a;
+}
+
+.app-header > .content > .sub-menu-service > .list-service > .item:hover > h3 {
+    color: #FFF;
+}
+
+.app-header > .content > .sub-menu-service > .list-service > .item:hover > span {
+    color: #FFF;
 }
 
 .app-header > .content > .sub-menu-service > .list-service > .item > h3 {
@@ -316,7 +334,7 @@ body {
 }
 
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1440px) {
 
     .app-header > .content > .sub-menu-service > .list-service {
         min-height: 500px;

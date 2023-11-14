@@ -38,7 +38,7 @@
 
 .app-body > .section-header > .content > .left > .top > h1 {
     font-size: 57px;
-    color: #262a82;
+    color: #4a494a;
     letter-spacing: -0.02em;
     line-height: 1.06;
     font-weight: bold;
@@ -62,10 +62,10 @@
     width: fit-content;
 }
 
-.app-body > .section-header > .content > .left > .top > button.btn-secondary {
-    border: 1px solid #953192;
+.app-body > .section-header > .content > .left > .top > button.btn-primary {
+    border: 1px solid #4a494a;
     border-radius: 100px;
-    background: #953192;
+    background: #4a494a;
     color: #FFF;
     padding: 12px 24px;
 }
@@ -232,13 +232,23 @@
     padding: 14px 20px;
     transition: all 0.3s ease 0s;
     cursor: pointer;
+    min-height: 320px;
+    max-height: 400px;
     border-right: 1px solid rgb(174, 174, 174);
-    height: 500px;
     z-index: 10;
 }
 
-.app-body > .section-service > .content > .list-service > .item:hover {
+.app-body > .section-service > .content > .list-service > .residential:hover {
     background: #FFE533;
+}
+.app-body > .section-service > .content > .list-service > .commercial:hover {
+    background: #00b5ef;
+}
+.app-body > .section-service > .content > .list-service > .reverse:hover {
+    background: #953192;
+}
+.app-body > .section-service > .content > .list-service > .real-estate:hover {
+    background: #4a494a;
 }
 
 .app-body > .section-service > .content > .list-service > .item:hover > h3 {
@@ -300,6 +310,7 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     font-size: 1rem;
+    color: #4a494a;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -309,6 +320,7 @@
     font-size: 57px;
     letter-spacing: -0.02em;
     font-weight: bold;
+    color: #262a82;
     -webkit-font-smoothing: antialiased;
     margin: 0;
 }
@@ -316,7 +328,7 @@
 .app-body > .section-feature > .content > .body {
     display: flex;
     flex-direction: column;
-    background: #060A2D;
+    background-color: #262a82;
 }
 
 .app-body > .section-feature > .content > .body > .top {
@@ -329,7 +341,7 @@
 
 .app-body > .section-feature > .content > .body > .top::before {
     content: "";
-    background: #060A2D;
+    background-color: #262a82;
     position: absolute;
     inset: 50% 0px 0px;
     z-index: 0;
@@ -363,7 +375,7 @@
 }
 
 .app-body > .section-feature > .content > .body > .bottom {
-    background: #060A2D;
+    background-color: #262a82;
     padding-bottom: 80px;
     position: relative;
     display: flex;
@@ -389,8 +401,8 @@
 .app-body > .section-feature > .content > .body > .bottom > .list > .item > h3 {
     letter-spacing: -0.02em;
     margin-bottom: 0.4em;
-    color: #BAE3F8;
-    font-size: 18px;
+    color: #FFF;
+    font-size: 24px;
     line-height: 1.15;
     font-weight: bold;
     letter-spacing: -0.01em;
@@ -398,7 +410,8 @@
 }
 
 .app-body > .section-feature > .content > .body > .bottom > .list > .item > p {
-    color: #BAE3F8;
+    color: #FFF;
+    line-height: 1.4;
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -563,7 +576,7 @@
 }
 
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1440px) {
 
     .app-body > .section-header > .content {
         min-height: 600px;
@@ -575,6 +588,10 @@
     .app-body > .section-service > .content > .list-service {
         min-height: 400px;
         max-height: 700px !important;
+    }
+
+    .app-body > .section-service > .content > .list-service > .item {
+        height: 500px;
     }
 
     .app-footer > .content > .list-footer > .item > .top > img {

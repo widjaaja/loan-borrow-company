@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background: rgb(6, 10, 45);
+    background-color: #262a82;
     padding: 70px 20px;
 }
 
@@ -20,12 +20,12 @@
 
 .app-body > .section-header > .content > h1 {
     text-align: center;
-    color: rgb(186, 227, 248);
+    color: #FFF;
 }
 
 .app-body > .section-header > .content > span {
     text-align: center;
-    color: rgb(186, 227, 248);
+    color: #FFF;
 }
 
 .app-body > .section-form {
