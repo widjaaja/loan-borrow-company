@@ -1,7 +1,6 @@
 
 window.onload = function(){
     // Body
-    var containerLayout = document.querySelector(".container-layout");
     window.addEventListener('scroll', () => {    
         console.log("top of element", window.scrollY);
         if (window.scrollY > 200) {
