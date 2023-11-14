@@ -125,6 +125,7 @@
     flex: 1;
     flex-direction: column;
     border: 2px solid rgb(6, 10, 45);
+    margin: 32px 0 16px;
 }
 
 .app-body > .section-form > .content > .body > .form-borrower .column {
