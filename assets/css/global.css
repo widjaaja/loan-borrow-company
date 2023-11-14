@@ -47,7 +47,7 @@ button.btn-transparent-outline {
     color: #01071B;
 }
 
-a {
+/* a {
     cursor: pointer;
     font-size: 14px;
     font-weight: bold;
@@ -63,7 +63,7 @@ a.btn-primary {
     background: #01071B;
     border-radius: 100px;
     color: #FFF;
-}
+} */
 
 
 body {
@@ -125,6 +125,8 @@ body {
     cursor: pointer;
     border-right: 1px solid rgb(174, 174, 174);
     z-index: 10;
+    text-decoration: none;
+    color: #000;
 }
 
 .app-header > .content > .sub-menu-service > .list-service > .residential:hover {
