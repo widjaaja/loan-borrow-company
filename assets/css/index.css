@@ -48,7 +48,7 @@
 .app-body > .section-header > .content > .left > .top > span {
     font-size: 26px;
     color: #4a494a;
-    margin-bottom: 36px;
+    margin: 25px 0 36px;
 }
 
 .app-body > .section-header > .content > .left > .top > button {
@@ -172,6 +172,7 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     font-size: 1rem;
+    color: #4a494a  ;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -182,6 +183,7 @@
     letter-spacing: -0.02em;
     font-weight: bold;
     -webkit-font-smoothing: antialiased;
+    color: #262a82;
     margin: 0;
 }
 
@@ -192,8 +194,7 @@
     padding-bottom: 80px;
     position: relative;
     padding:  0 40px 40px;
-    min-height: 400px;
-    max-height: 700px;
+    max-height: 400px;
 }
 
 .app-body > .section-service > .content > .list-service > .bg-service {
@@ -237,7 +238,15 @@
 }
 
 .app-body > .section-service > .content > .list-service > .item:hover {
-    background: rgb(241, 250, 255);
+    background: #FFE533;
+}
+
+.app-body > .section-service > .content > .list-service > .item:hover > h3 {
+    color: #FFF;
+}
+
+.app-body > .section-service > .content > .list-service > .item:hover > span {
+    color: #FFF;
 }
 
 .app-body > .section-service > .content > .list-service > .item > h3 {
@@ -554,7 +563,7 @@
 }
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
 
     .app-body > .section-header > .content {
         min-height: 600px;
@@ -563,6 +572,11 @@
     .app-body > .section-header > .additional-content span {
         font-size: 26px;
     }
+    .app-body > .section-service > .content > .list-service {
+        min-height: 400px;
+        max-height: 700px !important;
+    }
+
     .app-footer > .content > .list-footer > .item > .top > img {
         width: 180px !important;
     }

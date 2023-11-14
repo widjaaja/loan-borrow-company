@@ -27,17 +27,17 @@ button {
 }
 
 button.btn-primary {
-    border: 1px solid #01071B;
-    background: #01071B;
+    border: 1px solid #262a82;
+    background: #262a82;
     border-radius: 100px;
     color: #FFF;
 }
 
 button.btn-secondary {
-    border: 1px solid #FFF;
+    border: 1px solid #ffdf00;
     border-radius: 100px;
-    background: #FFF;
-    color: #01071B;
+    background: #ffdf00;
+    color: #4a494a;
 }
 
 button.btn-transparent-outline {
@@ -110,8 +110,7 @@ body {
     display: flex;
     flex: 1;
     position: relative;
-    min-height: 500px;
-    max-height: 700px;
+    max-height: 400px;
     border-top: 1px solid rgb(174, 174, 174);
 }
 
@@ -158,6 +157,7 @@ body {
 
 .app-header > .content > .left > img {
     cursor: pointer;
+    max-width: 160px;
 }
 
 .app-header > .content > .center {
@@ -205,18 +205,13 @@ body {
     margin: auto 10px;
 }
 
-.app-header > .content > .right > .list > button.btn-transparent-outline {
-    border: 1px solid #262a82;
-    background: transparent;
+.app-header > .content > .right > .list > button.btn-secondary{
     border-radius: 100px;
-    color: #4a494a;
+    font-weight: 700;
 }
 
 .app-header > .content > .right > .list > button.btn-primary {
-    border: 1px solid #262a82;
-    background: #262a82;
     border-radius: 100px;
-    color: #FFF;
 }
 
 .app-header > .nav-fixed {
@@ -318,4 +313,17 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     align-self: self-end;
+}
+
+
+@media screen and (min-width: 1300px) {
+
+    .app-header > .content > .sub-menu-service > .list-service {
+        min-height: 500px;
+        max-height: 700px !important; 
+    }
+
+    .app-footer > .content > .list-footer > .item > .top > img {
+        width: 180px !important;
+    }
 }
