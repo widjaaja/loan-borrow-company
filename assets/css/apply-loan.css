@@ -82,6 +82,13 @@
     padding: 8px 24px;
 }
 
+.app-body > .section-form > .content > .body > .row > .field-form-checkbox {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    padding: 8px;
+}
+
 .app-body > .section-form > .content > .body > .row > .field-form {
     display: flex;
     flex-direction: column;
@@ -113,12 +120,90 @@
     outline-color: rgb(186, 227, 248);
 }
 
+.app-body > .section-form > .content > .body > .form-borrower {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border: 2px solid rgb(6, 10, 45);
+}
+
+.app-body > .section-form > .content > .body > .form-borrower .column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.app-body > .section-form > .content > .body > .form-borrower > .head {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    border-bottom: 2px solid rgb(6, 10, 45);
+}
+
+.app-body > .section-form > .content > .body > .form-borrower .column:first-child {
+    border-right: 2px solid rgb(6, 10, 45);
+}
+
+.app-body > .section-form > .content > .body > .form-borrower > .head h4 {
+    flex: 1;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.app-body > .section-form > .content > .body > .form-borrower > .form-ethnicity,
+.app-body > .section-form > .content > .body > .form-borrower > .form-race {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    border-bottom: 2px solid rgb(6, 10, 45);
+}
+
+.app-body > .section-form > .content > .body > .form-borrower > .form-gender {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.app-body > .section-form > .content > .body > .form-borrower > .form-ethnicity .header,
+.app-body > .section-form > .content > .body > .form-borrower > .form-race .header,
+.app-body > .section-form > .content > .body > .form-borrower > .form-gender .header {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.app-body > .section-form > .content > .body > .form-borrower > .form-ethnicity .header h5,
+.app-body > .section-form > .content > .body > .form-borrower > .form-race .header h5,
+.app-body > .section-form > .content > .body > .form-borrower > .form-gender .header h5 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 4px;
+}
+
+.app-body > .section-form > .content > .body > .form-borrower > .form-ethnicity .header span,
+.app-body > .section-form > .content > .body > .form-borrower > .form-race .header span {
+    font-size: 16px;
+}
+
+.app-body > .section-form > .content > .body > .form-borrower > .form-gender .body {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 10px;
+}
+
+.app-body > .section-form > .content > .body > .form-borrower > .form-gender .body .field-form-checkbox {
+    margin-bottom: 8px;
+}
+
+
 .app-body > .section-form > .submit-content {
     margin-top: 24px;
 }
 
 .app-body > .section-form > .submit-content > button {
     padding: 12px 24px;
+
 }
 
 
