@@ -142,6 +142,7 @@ body {
 
 .app-header > .content > .sub-menu-service > .list-service > .item > span {
     font-size: 18px;
+    color: #4a494a;
 }
 
 .app-header > .content > .sub-menu-service > .list-service > .item > img {
@@ -179,7 +180,7 @@ body {
 }
 
 .app-header > .content > .center > .list > .item > span {
-    color: #000;
+    color: #4a494a;
     font-size: 24.5px;
     font-style: normal;
     font-weight: bold;
@@ -205,15 +206,15 @@ body {
 }
 
 .app-header > .content > .right > .list > button.btn-transparent-outline {
-    border: 1px solid #01071B;
+    border: 1px solid #262a82;
     background: transparent;
     border-radius: 100px;
-    color: #01071B;
+    color: #4a494a;
 }
 
 .app-header > .content > .right > .list > button.btn-primary {
-    border: 1px solid #01071B;
-    background: #01071B;
+    border: 1px solid #262a82;
+    background: #262a82;
     border-radius: 100px;
     color: #FFF;
 }
