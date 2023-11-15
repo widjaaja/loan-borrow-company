@@ -1,0 +1,344 @@
+.app-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-body > .section-header {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.app-body > .section-header > .content {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    max-height: 400px;
+}
+
+.app-body > .section-header > .content > .left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.app-body > .section-header > .content > .left > .bg-top {
+    display: flex;
+    flex: 1;
+    background: #0468E9;
+    height: calc(40vh - (80px / 2));
+    padding: 40px;
+}
+.app-body > .section-header > .content > .left > .bg-bottom {
+    display: flex;
+    flex: 1;
+    background: #01071B;
+    height: calc(40vh - (80px / 2));
+    padding: 40px;
+}
+
+.app-body > .section-header > .content > .left > .bg-top > h1 {
+    color: #01071B;
+    font-size: 28px;
+    letter-spacing: -0.02em;
+    line-height: 1.06;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+}
+
+.app-body > .section-header > .content > .left > .bg-bottom > h2 {
+    color: #FFF;
+    font-size: 28px;
+    letter-spacing: -0.02em;
+    line-height: 1.06;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+}
+
+.app-body > .section-header > .content > .right {
+    display: flex;
+    flex: 1;
+}
+
+.app-body > .section-header > .content > .right > img {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.app-body > .section-header > .additional-content {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    height: 100%;
+    min-height: 430px;
+}
+
+.app-body > .section-header > .additional-content > .left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.app-body > .section-header > .additional-content > .left > img {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.app-body > .section-header > .additional-content > .right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.app-body > .section-header > .additional-content > .right > .bg-top {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: #060A2D;
+    height: calc(40vh - (80px / 2));
+    padding: 40px;
+}
+
+.app-body > .section-header > .additional-content > .right > .bg-top > span {
+    margin-bottom: 20px;
+    color: #BAE3F8;
+    font-size: 12px;
+}
+
+.app-body > .section-header > .additional-content > .right > .bg-top > h2 {
+    font-size: 28px;
+    color: #BAE3F8;
+    letter-spacing: -0.02em;
+    line-height: 1.06;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+}
+
+.app-body > .section-header > .additional-content > .right > .bg-top > p {
+    color: #BAE3F8;
+    margin-top: 25px;
+    font-size: 16px;
+    line-height: 1.15;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+.app-body > .section-header > .additional-content > .right > .bg-top > button {
+    padding: 12px 24px;
+    margin-top: 24px;
+}
+
+.app-body > .section-contact {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.app-body > .section-contact > .bg-blue {
+    background-color: #BAE3F8;
+}
+
+.app-body > .section-contact > .bg-cream {
+    background-color: #EADFD6;
+}
+
+.app-body > .section-contact > .content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    padding-top: 110px;
+    padding-bottom: 110px; 
+}
+
+.app-body > .section-contact > .content > .list {
+    display: grid;
+    margin: 0px auto;
+    color: #01071B;
+    width: calc(6 / 8 * (100% - 40px * 2));
+    grid-template-columns: repeat(3, 1fr);
+    gap: 120px 30px;
+    z-index: 1;
+    position: relative;
+}
+
+.app-body > .section-contact > .content > .list > .item {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-body > .section-contact > .content > .list > .divider {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    border-top: 3px solid #01071B;
+    grid-column: 1 / -1;
+}
+
+.app-body > .section-contact > .content > .list > .divider > .line {
+    font-size: 1.6rem;
+    line-height: 1.3;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+.app-body > .section-contact > .content > .list > .item > span {
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    color: #01071B;
+}
+
+.app-body > .section-contact > .content > .list > .item > h3 {
+    font-size: 18px;
+    line-height: 1.15;
+    font-weight: bold;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+    color: #01071B;
+}
+
+.app-body > .section-faq {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.app-body > .section-faq > .content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: calc(6 / 8 * (100% - 40px * 2));
+    margin: 0px auto;
+    background: #FFFBF7;
+}
+
+.app-body > .section-faq > .content > h2 {
+    font-size: 28px;
+    letter-spacing: -0.02em;
+    line-height: 1.06;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+}
+
+.app-body > .section-faq > .content > .list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.app-body > .section-faq > .content > .list > h3 {
+    font-size: 18px;
+    line-height: 1.15;
+    font-weight: bold;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+}
+
+.app-body > .section-faq > .content > .list .item {
+    margin-bottom: 0.5em;
+}
+
+.app-body > .section-faq > .content > .list .item {
+    margin-bottom: 0.5em;
+}
+
+.app-body > .section-faq > .content > .list .item > h5 {
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+.app-body > .section-faq > .content > .list .item > .value {
+    display: none;
+    opacity: 0;
+    text-align: left;
+    overflow: hidden;
+    color: rgb(75, 75, 75);
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+@media screen and (min-width: 700px) {
+    .app-body > .section-header > .content > .left > .bg-top > h1,
+    .app-body > .section-header > .content > .left > .bg-bottom > h2,
+    .app-body > .section-certification > .additional-content > .left > .bg-top > h2  {
+        font-size: 48px;
+    }
+
+    .app-body > .section-header > .additional-content > .right > .bg-top > span {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .app-body > .section-header > .additional-content > .right > .bg-top > h2,
+    .app-body > .section-feature > .additional-content > .left > .bg-top > h2 {
+        font-size: 50px;
+    }
+
+    .app-body > .section-header > .additional-content > .right > .bg-top > p,
+    .app-body > .section-feature > .additional-content > .left > .bg-top > p,
+    .app-body > .section-certification > .additional-content > .left > .bg-top > p {
+        font-size: 24px;
+    }
+
+    .app-body > .section-customer > .content > .body > .intercept > .img-content {
+        min-height: 350px;
+    }
+
+    .app-body > .section-contact > .content > .list > .item > span {
+        font-size: 1.25018vw;
+        line-height: 1.4;
+    }
+
+    .app-body > .section-contact > .content > .list > .item > h3 {
+        font-size: 1.80582vw;
+        font-weight: bold;
+        margin-bottom: 1em;
+        letter-spacing: -0.02em;
+    }
+
+    .app-body > .section-contact > .content > .list > .divider > .line {
+        font-size: 1.25018vw;
+        line-height: 1.4;
+    }
+
+    .app-body > .section-faq > .content > h2 {
+        font-weight: bold;
+        border-bottom: 3px solid #01071B;
+        padding-bottom: 80px;
+        padding-top: 80px;
+        font-size: 3.95891vw;
+    }
+
+    .app-body > .section-faq > .content > .list > h3 {
+        font-size: 1.80582vw;
+        font-weight: bold;
+        margin-bottom: 1em;
+    }
+
+    .app-body > .section-faq > .content > .list .item > h5 {
+        font-size: 1.25018vw;
+        text-align: left;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .app-body > .section-faq > .content > .list .item > .value {
+        height: auto;
+        opacity: 1;
+        margin-bottom: 80px;
+        font-size: 1.25018vw;
+    }
+}

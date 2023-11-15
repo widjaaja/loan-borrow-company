@@ -198,7 +198,8 @@ body {
     cursor: pointer;
 }
 
-.app-header > .content > .center > .list > .item > span {
+.app-header > .content > .center > .list > .item > span,
+.app-header > .content > .center > .list > .item > a {
     color: #4a494a;
     font-size: 24.5px;
     font-style: normal;
@@ -206,6 +207,7 @@ body {
     line-height: 26px; /* 106.122% */
     letter-spacing: -0.26px;
     user-select: none;
+    text-decoration: none;
 }
 
 .app-header > .content > .right > .list {

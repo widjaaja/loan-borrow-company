@@ -1,5 +1,5 @@
 
-window.onload = function(){
+window.addEventListener('load', function() {
     // Body
     window.addEventListener('scroll', () => {    
         console.log("top of element", window.scrollY);
@@ -38,7 +38,7 @@ window.onload = function(){
     var closeNavbar = document.querySelector(".close-navbar");
     openNavbar.addEventListener("click", openMenuMobile, false);
     closeNavbar.addEventListener("click", closeMenuMobile, false);
-}
+});
 
 function redirect(url){ 
     window.location.href = url;
