@@ -86,6 +86,7 @@
     justify-content: center;
     text-align: center;
     padding: 10rem 0;
+    background-color: #fffbf7;
 }
 
 .app-body > .section-offering > .content > .top > p:first-child {
@@ -109,15 +110,52 @@
 
 .app-body > .section-offering > .content > .bottom > .offers-container {
     position: absolute;
-    width: 50vw;
-    height: 10rem;
-    right: 0;
+    width: 40%;
+    height: fit-content;
+    right: -50%;
     left: 0;
-    top: 0;
-    bottom: 0;
+    top: -6%;
     margin: auto;
-    transform: translate(27rem, -33rem);
     background-color: #fff;
+    z-index: 10;
+}
+
+.accordion-title {
+    cursor: pointer;
+    padding: 3rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.accordion-title > div:last-child {
+    flex: 1;
+}
+
+.accordion-title > div > .accordion-title-text {
+    font-weight: 900;
+    font-size: 1.7rem;
+}
+
+.accordion-title > .button-plus {
+    background-color: #01071b;
+    border-radius: 100%;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 1em sans-serif;
+    font-size: 2rem;
+    -webkit-font-smoothing: antialiased;
+}
+
+.accordion-title > .button-plus > i {
+    font-size: 1.2rem;
+}
+
+.offers {
+    border-bottom: 1px solid #2a2929;
 }
 
 .app-body > .section-offering > .content > .bottom > div:last-child {
@@ -130,6 +168,4 @@
     height: 100%;
     width: 100%;
 }
-
-
 /* Section Offering End */

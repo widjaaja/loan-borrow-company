@@ -2,7 +2,7 @@
 window.onload = function(){
     // Body
     window.addEventListener('scroll', () => {    
-        console.log("top of element", window.scrollY);
+        // console.log("top of element", window.scrollY);
         if (window.scrollY > 200) {
             let animation = gsap.to(".nav-fixed", {
                 paused: true,
@@ -38,6 +38,36 @@ window.onload = function(){
     var closeNavbar = document.querySelector(".close-navbar");
     openNavbar.addEventListener("click", openMenuMobile, false);
     closeNavbar.addEventListener("click", closeMenuMobile, false);
+    
+    var accordionTitle = document.querySelectorAll(".accordion-title");
+    accordionTitle.forEach((item) => {
+        item.addEventListener("click", function () {
+            let accordionContent = this.children[1].children[1];
+            toggleAccordion(accordionContent);
+        });
+    });
+}
+
+function toggleAccordion(element){
+    if(!element) {
+        return;
+    }
+    let buttonPlus = element.parentElement.previousElementSibling;
+    if(element.style.height === "0px") {
+        buttonPlus.innerHTML = `<i class="fa-solid fa-minus"></i>`;
+        gsap.to(element, {
+            duration: 0.2,
+            opacity:  1 ,
+            height:  "auto",
+        });
+    } else {
+        buttonPlus.innerHTML = `<i class="fa-solid fa-plus"></i>`;
+        gsap.to(element, {
+            duration: 0.2,
+            opacity:  0 ,
+            height:  "0px",
+        });
+    }
 }
 
 function redirect(url){ 
