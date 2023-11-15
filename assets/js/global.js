@@ -91,6 +91,3 @@ function closeMenuService(){
      animation.play()
     }
  }
-
-
-
