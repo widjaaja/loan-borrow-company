@@ -53,8 +53,13 @@ function toggleAccordion(element){
         return;
     }
     let buttonPlus = element.parentElement.previousElementSibling;
+    let imageElemet = element.parentElement.parentElement.parentElement.parentElement.nextElementSibling;
     if(element.style.height === "0px") {
         buttonPlus.innerHTML = `<i class="fa-solid fa-minus"></i>`;
+       gsap.to(imageElemet, {
+            duration: 0.2,
+            height:  (imageElemet.scrollHeight+element.scrollHeight) + "px",
+       });
         gsap.to(element, {
             duration: 0.2,
             opacity:  1 ,
@@ -62,6 +67,10 @@ function toggleAccordion(element){
         });
     } else {
         buttonPlus.innerHTML = `<i class="fa-solid fa-plus"></i>`;
+        gsap.to(imageElemet, {
+            duration: 0.2,
+            height:  (imageElemet.scrollHeight-element.scrollHeight) + "px",
+        });
         gsap.to(element, {
             duration: 0.2,
             opacity:  0 ,
