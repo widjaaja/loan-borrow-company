@@ -40,6 +40,13 @@ button.btn-secondary {
     color: #4a494a;
 }
 
+button.btn-tertiary {
+    border: 1px solid #01071B;
+    background: #01071b;
+    border-radius: 100px;
+    color: #FFF;
+}
+
 button.btn-transparent-outline {
     border: 1px solid #01071B;
     background: transparent;

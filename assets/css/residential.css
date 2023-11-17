@@ -167,13 +167,163 @@
     width: 100%;
 }
 
+.accordion-content {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
 .button-read-more {
-    width: 100%;
+    margin-left: auto;
+    width: fit-content;
     text-decoration: none;
     color: #ff7d7d;
     z-index: inherit;
-    display: block;
-    text-align: right;
     -webkit-font-smoothing: antialiased;
 }
 /* Section Offering End */
+
+/* Section Residential */
+.section-residential {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+}
+
+.section-residential > .top {
+    background-color: #36a16d;
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-residential > .top > span:first-child {
+    margin-top: 7rem;
+    font-weight: 800;
+}
+
+.section-residential > .top > span:last-child {
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+}
+
+.section-residential > .bottom {
+    background-color: #fffbf7;
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-residential > .bottom > div  {
+    display: flex;
+    gap: 1rem;
+    height: 100%;
+    justify-content: center;
+}
+
+.section-residential > .bottom > div > div {
+    height: fit-content;
+    margin-top: 15%;
+    width: 23%;
+}
+
+.section-residential > .bottom > div > div > .title {
+    font-weight: 900;
+    font-size: 20px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.section-residential > .bottom > div > div > .description {
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.section-residential > .bottom > button {
+    padding: 0.5rem 1rem;
+    margin-bottom: 7%;
+}
+
+.section-residential > img {
+    position: absolute;
+    width: 50%;
+    top: -3rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+/* Section Residential End*/
+
+/* Section Residential 2 */
+.app-body > .section-feature {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    height: 100%;
+    min-height: 530px;
+}
+
+.app-body > .section-feature > .right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.app-body > .section-feature > .right > img {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.app-body > .section-feature > .left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.app-body > .section-feature > .left > .bg-top {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: #bae3f8;
+    height: calc(40vh - (80px / 2));
+    padding: 40px;
+}
+
+.app-body > .section-feature > .left > .bg-top > span {
+    margin-bottom: 20px;
+    color: #BAE3F8;
+    font-size: 12px;
+}
+
+.app-body > .section-feature > .left > .bg-top > h1 {
+    font-size: 42px;
+    letter-spacing: -0.02em;
+    line-height: 1.06;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+}
+
+.app-body > .section-feature > .left > .bg-top > p {
+    margin-top: 25px;
+    font-size: 20px;
+    line-height: 1.15;
+    -webkit-font-smoothing: antialiased;
+}
+
+.app-body > .section-feature > .left > .bg-top > button {
+    padding: 6px 14px;
+    margin-top: 24px;
+    font-size: 9px;
+    font-weight: bolder;
+    -webkit-font-smoothing: antialiased;
+}
+/* Section Residential 2 End  */
