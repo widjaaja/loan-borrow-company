@@ -39,12 +39,60 @@ window.addEventListener('load', function() {
     openNavbar.addEventListener("click", openMenuMobile, false);
     closeNavbar.addEventListener("click", closeMenuMobile, false);
     
+    // Accordion
     var accordionTitle = document.querySelectorAll(".accordion-title");
     accordionTitle.forEach((item) => {
         item.addEventListener("click", function () {
             let accordionContent = this.children[1].children[1];
             toggleAccordion(accordionContent);
         });
+    });
+
+    // Carousel
+    var carouselElement = document.querySelectorAll(".carousel");
+    var nextActive = 1;
+    var buttonNext = document.querySelector(".btn-next");
+    var buttonPrev = document.querySelector(".btn-prev");
+    buttonNext.addEventListener("click", function () {
+        carouselElement.forEach((item, idx) => {
+            if (idx !== nextActive ) {
+                gsap.to(item, {
+                    duration: 0.5,
+                    opacity: 0,
+                    display: "none",
+                });
+            }
+        });
+        gsap.to(carouselElement[nextActive], {
+            duration: 0.5,
+            opacity: 1,
+            display: "flex",
+        });
+        nextActive++;
+        if (nextActive === carouselElement.length) {
+            nextActive = 0;
+        }
+    });
+
+    buttonPrev.addEventListener("click", function () {
+        carouselElement.forEach((item, idx) => {
+            if (idx !== nextActive ) {
+                gsap.to(item, {
+                    duration: 0.5,
+                    opacity: 0,
+                    display: "none",
+                });
+            }
+        });
+        gsap.to(carouselElement[nextActive], {
+            duration: 0.5,
+            opacity: 1,
+            display: "flex",
+        });
+        nextActive--;
+        if (nextActive < 0) {
+            nextActive = carouselElement.length - 1;
+        }
     });
 });
 
