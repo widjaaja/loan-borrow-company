@@ -25,20 +25,20 @@
 .app-body > .section-header > .content > .left > .bg-top {
     display: flex;
     flex: 1;
-    background: #0468E9;
+    background: #00b5ef;
     height: calc(40vh - (80px / 2));
     padding: 40px;
 }
 .app-body > .section-header > .content > .left > .bg-bottom {
     display: flex;
     flex: 1;
-    background: #01071B;
+    background: #4a494a;
     height: calc(40vh - (80px / 2));
     padding: 40px;
 }
 
 .app-body > .section-header > .content > .left > .bg-top > h1 {
-    color: #01071B;
+    color: #FFF;
     font-size: 28px;
     letter-spacing: -0.02em;
     line-height: 1.06;

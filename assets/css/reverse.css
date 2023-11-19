@@ -25,10 +25,11 @@
 .app-body > .section-header > .content > .left > .bg-top {
     display: flex;
     flex: 1;
-    background: #F5693A;
+    background-color: #262a82;
     height: calc(40vh - (80px / 2));
     padding: 40px;
 }
+
 .app-body > .section-header > .content > .left > .bg-bottom {
     display: flex;
     flex: 1;
@@ -38,7 +39,7 @@
 }
 
 .app-body > .section-header > .content > .left > .bg-top > h1 {
-    color: #01071B;
+    color: #FFF;
     font-size: 28px;
     letter-spacing: -0.02em;
     line-height: 1.06;
@@ -100,20 +101,20 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    background: #060A2D;
+    background: #4a494a;
     height: calc(40vh - (80px / 2));
     padding: 40px;
 }
 
 .app-body > .section-header > .additional-content > .right > .bg-top > span {
     margin-bottom: 20px;
-    color: #BAE3F8;
+    color: #FFF;
     font-size: 12px;
 }
 
 .app-body > .section-header > .additional-content > .right > .bg-top > h2 {
     font-size: 28px;
-    color: #BAE3F8;
+    color: #FFF;
     letter-spacing: -0.02em;
     line-height: 1.06;
     font-weight: bold;
@@ -121,7 +122,7 @@
 }
 
 .app-body > .section-header > .additional-content > .right > .bg-top > p {
-    color: #BAE3F8;
+    color: #FFF;
     margin-top: 25px;
     font-size: 16px;
     line-height: 1.15;
@@ -132,6 +133,7 @@
 .app-body > .section-header > .additional-content > .right > .bg-top > button {
     padding: 12px 24px;
     margin-top: 24px;
+    background-color: #262a82;
 }
 
 .app-body > .section-feature {
@@ -209,20 +211,20 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    background: #060A2D;
+    background: #FFE533;
     height: calc(40vh - (80px / 2));
     padding: 40px;
 }
 
 .app-body > .section-feature > .additional-content > .left > .bg-top > span {
     margin-bottom: 20px;
-    color: #BAE3F8;
+    color: #4a494a;
     font-size: 12px;
 }
 
 .app-body > .section-feature > .additional-content > .left > .bg-top > h2 {
     font-size: 28px;
-    color: #BAE3F8;
+    color: #4a494a;
     letter-spacing: -0.02em;
     line-height: 1.06;
     font-weight: bold;
@@ -230,7 +232,7 @@
 }
 
 .app-body > .section-feature > .additional-content > .left > .bg-top > p {
-    color: #BAE3F8;
+    color: #4a494a;
     margin-top: 25px;
     font-size: 16px;
     line-height: 1.15;
@@ -241,18 +243,19 @@
 .app-body > .section-feature > .additional-content > .left > .bg-top > button {
     padding: 12px 24px;
     margin-top: 24px;
+    background: #4a494a;
 }
 
 .app-body > .section-customer {
     display: flex;
     flex-direction: column;
-    background-color: #F5693A;
+    background: #00b5ef;
 }
 
 .app-body > .section-customer > .content {
     display: flex;
     flex-direction: column;
-    background-color: #F5693A;
+    background: #00b5ef;
 }
 
 .app-body > .section-customer > .content > .header {
@@ -271,7 +274,7 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     font-size: 1rem;
-    color: #4a494a  ;
+    color: #FFF;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -282,7 +285,7 @@
     letter-spacing: -0.02em;
     font-weight: bold;
     -webkit-font-smoothing: antialiased;
-    color: #262a82;
+    color: #FFF;
     margin: 0;
 }
 
@@ -338,6 +341,7 @@
     padding: 12px 24px;
     text-align: center;
     margin-top: 80px;
+    background-color: #262a82;
 }
 
 

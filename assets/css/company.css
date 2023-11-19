@@ -56,7 +56,7 @@
     display: flex;
     flex: 1;
     grid-area: card2;
-    background: #060A2D;
+    background: #4a494a;
     padding: 40px;
 }
 
@@ -109,20 +109,20 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    background: #060A2D;
+    background: #FFE533;
     height: calc(40vh - (80px / 2));
     padding: 40px;
 }
 
 .app-body > .section-header > .additional-content > .right > .bg-top > span {
     margin-bottom: 20px;
-    color: #BAE3F8;
+    color: #4a494a;
     font-size: 12px;
 }
 
 .app-body > .section-header > .additional-content > .right > .bg-top > h2 {
     font-size: 28px;
-    color: #BAE3F8;
+    color: #4a494a;
     letter-spacing: -0.02em;
     line-height: 1.06;
     font-weight: bold;
@@ -130,7 +130,7 @@
 }
 
 .app-body > .section-header > .additional-content > .right > .bg-top > p {
-    color: #BAE3F8;
+    color: #4a494a;
     margin-top: 25px;
     font-size: 16px;
     line-height: 1.15;
@@ -249,6 +249,7 @@
 
 .app-body > .section-team > .content > .body > .btn-content > button {
     padding: 12px 24px;
+    background-color: #262a82;
 }
 
 .app-body > .section-community {
@@ -289,21 +290,21 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    background: #BAE3F8;
+    background: #4a494a;
     height: calc(40vh - (80px / 2));
     padding: 40px;
 }
 
 .app-body > .section-community > .additional-content > .left > .bg-top > span {
     margin-bottom: 20px;
-    color: #01071B;
+    color: #FFF;
     font-size: 14px;
     font-weight: 700;
 }
 
 .app-body > .section-community > .additional-content > .left > .bg-top > h2 {
     font-size: 28px;
-    color: #01071B;
+    color: #FFF;
     letter-spacing: -0.02em;
     line-height: 1.06;
     font-weight: bold;
@@ -311,7 +312,7 @@
 }
 
 .app-body > .section-community > .additional-content > .left > .bg-top > p {
-    color: #01071B;
+    color: #FFF;
     margin-top: 25px;
     font-size: 16px;
     line-height: 1.15;
@@ -322,6 +323,7 @@
 .app-body > .section-community > .additional-content > .left > .bg-top > button {
     padding: 12px 24px;
     margin-top: 24px;
+    background-color: #262a82;
 }
 
 
@@ -329,7 +331,7 @@
 @media screen and (min-width: 700px) {
     .app-body > .section-header > .content > .left > .bg-top > h1,
     .app-body > .section-community > .additional-content > .left > .bg-top > h2  {
-        font-size: 48px;
+        font-size: 3.95891vw;
     }
 
     .app-body > .section-header > .content > .left {
